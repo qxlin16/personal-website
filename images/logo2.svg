@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Black background -->
+  <rect width="400" height="400" fill="#000000"/>
+  
+  <!-- Orbital path 1 - elliptical (enlarged) -->
+  <ellipse cx="200" cy="200" rx="150" ry="75" 
+          fill="none" stroke="#3498db" stroke-width="4" 
+          transform="rotate(30 200 200)"/>
+  
+  <!-- Orbital path 2 - elliptical (enlarged) -->
+  <ellipse cx="200" cy="200" rx="150" ry="75" 
+          fill="none" stroke="#2980b9" stroke-width="4"
+          transform="rotate(90 200 200)"/>
+  
+  <!-- Orbital path 3 - elliptical (enlarged) -->
+  <ellipse cx="200" cy="200" rx="150" ry="75" 
+          fill="none" stroke="#9b59b6" stroke-width="4"
+          transform="rotate(150 200 200)"/>
+  
+  <!-- Electron dots on the orbital paths - larger -->
+  <circle cx="350" cy="200" r="10" fill="#3498db"/>
+  <circle cx="200" cy="275" r="10" fill="#2980b9"/>
+  <circle cx="50" cy="200" r="10" fill="#9b59b6"/>
+  
+  <!-- QL text - centered (enlarged) -->
+  <text x="200" y="205" font-family="Arial, sans-serif" font-size="100" text-anchor="middle" dominant-baseline="middle" font-weight="bold" fill="#f8f8f8">QL</text>
+</svg>
