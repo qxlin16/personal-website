@@ -82,31 +82,32 @@
     width: 300px;
 }
 #home-card #card-style {
-    background: #fff;
+    background: #ffffff00;
     border: none;
     border-radius: 10px;
-    box-shadow: 0 0 20px #d9d9d980;
+    /* box-shadow: 0 0 20px #d9d9d980; */
     display: flex;
     flex-direction: column;
-    max-height: 80vh;
+    max-height: 100vh;
     justify-content: center;
     overflow: auto;
     position: sticky;
     text-align: center;
     top: 10vh;
-    width: 300px;
+    width: 250px;
 }
 #home-card #card-div {
     overflow: auto;
     padding: 25px 0;
+    margin-top: 50px;
 }
 #home-card #card-div .avatar {
-    border: #f1f1f1 solid 3px;
+    border: rgb(210, 178, 252)solid 3px;
     border-radius: 50%;
-    height: 140px;
     margin: auto;
     text-align: center;
-    width: 140px;
+    height: 120px;
+    width: 120px;
 }
 #home-card #card-div .avatar img {
     border-radius: 50%;
@@ -117,6 +118,8 @@
     transform: rotate(360deg);
 }
 #home-card #card-div .description {
+    font-size: 10;
+    font-weight: 200;
     margin: 20px auto;
     width: 85%;
 }
@@ -152,7 +155,7 @@
     width: 85%;
 }
 #home-card #card-div .name {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     margin: 20px auto;
 }
@@ -244,10 +247,11 @@
     color: #999;
 }
 #home-posts .post {
-    background: #fff;
+    background: #ffffff00;
     border-radius: 20px;
-    box-shadow: 0 0 20px #d9d9d980;
-    transition: box-shadow 0.25s, transform 0.25s;
+    /* box-shadow: 0 0 20px #d9d9d980;
+    transition: box-shadow 0.25s, transform 0.25s; */
+    overflow: hidden;
 }
 #home-posts .post .category-and-date {
     color: #5c6b72;
@@ -311,10 +315,10 @@
     color: #66afef;
     text-align: center;
 }
-#home-posts .post:hover {
+/* #home-posts .post:hover {
     box-shadow: 0 0 5px #d9d9d9;
     transform: translate(-5px, -5px);
-}
+} */
 #home-posts-wrap {
     background: transparent;
     border-radius: 10px;
@@ -469,7 +473,7 @@
     word-wrap: break-word;
 }
 .article {
-    font-size: 15px;
+    font-size: 14px;
     margin: auto;
     margin-top: 100px;
     padding: 20px;
@@ -703,7 +707,8 @@ blockquote {
 body {
     background: #f6f8fa;
     color: #1e3e3f;
-    font: 500 14px Lexend, "Noto Sans SC", sans-serif;
+    font: 200 16px Lexend, "Noto Sans SC", sans-serif;
+    /* font: 500 18px Lexend, "Times New Roman", sans-serif; */
     overflow-x: hidden;
     width: 100%;
 }
@@ -762,7 +767,7 @@ mark {
 p,
 ul,
 ol {
-    line-height: 1.7;
+    line-height: 2;
     margin: 15px 0;
 }
 pre {
@@ -894,7 +899,7 @@ ol li {
         padding-left: 40px;
     }
 }
-@media (min-width: 900px) and (max-width: 1200px) {
+@media (min-width: 900px) and (max-width: 1000px) {
     #home-card {
         display: none;
     }
