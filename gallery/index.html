@@ -12,6 +12,7 @@
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
     <link rel="icon" href="/images/logo2.svg" />
+    <link rel="stylesheet" href="/css/custom.css">
     <link rel="preconnect" href="https://s4.zstatic.net" />
 <script src="https://s4.zstatic.net/ajax/libs/vue/3.3.7/vue.global.prod.min.js"></script>
 <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
@@ -149,7 +150,7 @@
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2025/3/24
+            2025/4/6
         </span> -->
         
         
@@ -157,56 +158,149 @@
     
     <div class="content" v-pre>
         <div class="gallery-grid">
-    <div class="gallery-item">
-        <img src="/images/aurora.jpg" alt="Aurora at Alaska">
-        <p>Aurora at Alaska</p>
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/aobs_chip.png" alt="AOBS" onclick="openLightbox(this.src)">
     </div>
-    <div class="gallery-item">
-        <img src="/images/aobs_chip.png" alt="AOBS">
-        <p>AOBS -- linking photonic chip to free-space</p>
+    <div class="caption">
+      <div class="description">AOBS -- linking photonic chip to free-space</div>
+      <div class="credit">by AOBS team (2025)</div>
     </div>
+  </div>
+  
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/revolving_mario_round_marker.gif" alt="Revolving Mario Round Marker" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">3D Mario imaged in frequency domain</div>
+      <div class="credit">by Shucheng Fang (2024)</div>
+    </div>
+  </div>
+  
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/lnoi_ring_03.png" alt="Ring-enhanced AOBS" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">Ring-enhanced AOBS with an integrated electro-optic modulator</div>
+      <div class="credit">by Yue Yu (2025)</div>
+    </div>
+  </div>
+
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/rlnbs03.png" alt="Acousto-optic waveguide" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">Integrated phoxonic circuit</div>
+      <div class="credit">by Qixuan Lin (2025)</div>
+    </div>
+  </div>
+  
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/rlnbs04.png" alt="Phononic waveguides" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">Phononic waveguides</div>
+      <div class="credit">by Qixuan Lin (2025)</div>
+    </div>
+  </div>
+  
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/AL01 POST CPD1.jpg" alt="1mm free-standing LN membrane" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">1mm free-standing LN membrane</div>
+      <div class="credit">by Qixuan Lin (2025)</div>
+    </div>
+  </div>
+
 </div>
 
-<style>
-.gallery-grid {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important; /* 2 columns by default */
-    gap: 20px !important;
-    justify-items: center !important;
-    padding: 20px !important;
-}
+<h2 id="Beyond-the-Lab"><a href="#Beyond-the-Lab" class="headerlink" title="Beyond the Lab"></a>Beyond the Lab</h2><div class="gallery-grid">
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/sakura.jpg" alt="Cherry Blossom at UW" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">Cherry Blossom at UW</div>
+      <div class="credit">by Qixuan Lin (2025)</div>
+    </div>
+  </div>
 
-.gallery-item {
-    text-align: center !important;
-    max-width: 400px !important;
-}
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/aurora.jpg" alt="Aurora at Alaska" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">Aurora at Alaska</div>
+      <div class="credit">by Qixuan Lin (2025)</div>
+    </div>
+  </div>
 
-.gallery-item img {
-    width: 100% !important;
-    height: auto !important;
-    border-radius: 10px !important;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
-}
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/aurora2.jpg" alt="Aurora at Alaska COE" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">267K is cold. We are cool!</div>
+      <div class="credit">by Qixuan Lin (2025)</div>
+    </div>
+  </div>
 
-.gallery-item p {
-    font-size: 14px !important;
-    color: #666 !important;
-    margin-top: 5px !important;
-}
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/glacier2.jpg" alt="Matanuska glacier" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">Matanuska glacier</div>
+      <div class="credit">by Tongyan Wang (2025)</div>
+    </div>
+  </div>
 
-/* Responsive Design */
-@media (min-width: 1200px) {
-    .gallery-grid {
-        grid-template-columns: repeat(3, 1fr) !important; /* 3 images per row */
-    }
-}
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/granite.jpg" alt="Granite mountain" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">Granite Mountain: a tough last mile to a clear view</div>
+      <div class="credit">by Qixuan Lin (2025)</div>
+    </div>
+  </div>
+  
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/spie.jpg" alt="spie" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">"Never trust an atom. They make up everything!"</div>
+      <div class="credit">by Qixuan Lin (2020)</div>
+    </div>
+  </div>
 
-@media (max-width: 600px) {
-    .gallery-grid {
-        grid-template-columns: 1fr !important; /* 1 image per row on small screens */
-    }
-}
-</style>
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/soccer2.jpg" alt="soccer2" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">Best memories on soccer fields</div>
+      <div class="credit">by Qixuan Lin (2020)</div>
+    </div>
+  </div>
+  
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/soccer1.jpg" alt="soccer" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">We are the champion</div>
+      <div class="credit">by Qixuan Lin (2019)</div>
+    </div>
+  </div>
+</div>
     </div>
     
     
